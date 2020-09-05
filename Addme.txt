@@ -27,3 +27,5 @@ Disallow: /cgi-bin/
 Disallow: /contact
 Sitemap: anagh.ga/index.html
 
+This is the sample easiest webpage.malyalam languages. 
+kuttikol post office chengla via kasaragod 671541 Malayali
