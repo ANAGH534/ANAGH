@@ -8,6 +8,7 @@
 	<meta name="author" content="Anagh k r">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -111,7 +112,7 @@
 					<div class="card card-signin my-5 mb-1">
 						<div class="card-body">
 							<!-- <h5 class="card-title text-center font-weight-bold">Login</h5> -->
-							<form class="form-signin" action="/login" method="POST">
+							<form class="form-signin" id="submit-form" action="">
 								<div class="form-label-group">
 									<input type="text" id="inputname" name="name" class="form-control"
 										placeholder="Full Name" required>
@@ -123,7 +124,7 @@
 								</div>
 								<br>
 								<div class="form-label-group">
-									<textarea name="comment" id="comment" cols="62" rows="3" required
+									<textarea name="comment" name="comment" id="comment" cols="62" rows="3" required
 										class="form-control" placeholder="Enter Your Comments"></textarea>
 								</div>
 								<br>
@@ -202,5 +203,6 @@
 	rel="stylesheet">
 <!-- //google fonts -->
 <script src="/js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </html>
