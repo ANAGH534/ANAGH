@@ -200,7 +200,24 @@
 		href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
 		rel="stylesheet">
 	<!-- //google fonts -->
+	<script>
+		$("#submit-form").submit((e) => {
+    alert("Comment Senting to Sever")
+    e.preventDefault()
+    $.ajax({
+        url: "https://script.google.com/macros/s/AKfycbxvTPuNrEwBQXPbIe0tn6PUDmJdFC0f4Xv3ZpOOM5KNQrU6vJhSIaDT/exec",
+        data: $("#submit-form").serialize(),
+        method: "post",
+        success: function (response) {
+            window.location.href = "success.html"
+        },
+        error: function (err) {
+            alert("Something Error")
 
+        }
+    })
+})
+	</script>
 </body>
 
 </html>
