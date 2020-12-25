@@ -1106,41 +1106,29 @@ a.move-top span{
     width: 200px;
     transition: all 0.5s;
     cursor: pointer;
-    
-  }
+}
   
-  .button span {
+.button span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
-  }
+}
   
-  .button span:after {
+.button span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
     top: 0;
     right: -20px;
     transition: 0.5s;
-  }
+}
   
-  
-  .button:hover span:after {
+.button:hover span:after {
     opacity: 1;
     right: 0;
-  }
-/*--body {
-  margin: 2em;
 }
-aside {
-    background: #1f8dd6; /* same color as selected state on site menu */
-    padding: 0.3em 1em;
-    border-radius: 3px;
-    color: #fff;
-    margin-bottom: 2em;
-}
-textarea {
+.textarea {
   width: 100%;
 }
 .content-head {
@@ -1166,6 +1154,10 @@ button {
 }
 #name, #email {
   width: 50%;
+}
+.img{
+    width: 650px; 
+    height:700px
 }
 
 
