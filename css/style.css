@@ -1152,6 +1152,9 @@ button {
     width: 650px; 
     height:700px
 }
-
-
-
+.contact-section{
+    background: linear-gradient(rgb(241, 127, 127),#222222b7);
+}
+.card{
+    background: linear-gradient(rgb(218, 110, 110),#222222d8);
+}
