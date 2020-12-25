@@ -6,9 +6,7 @@ $("#submit-form").submit((e) => {
         data: $("#submit-form").serialize(),
         method: "post",
         success: function (response) {
-            alert("Form submitted successfully")
-            window.location.reload()
-            //window.location.href="https://google.com"
+            window.location.href = "success.html"
         },
         error: function (err) {
             alert("Something Error")
