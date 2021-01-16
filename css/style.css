@@ -775,6 +775,11 @@ a.move-top span{
 		font-size: 21px;
 	}
 }
+@media(max-width:1115px){
+    #images{
+        height: 684px;
+    }
+}
 @media(max-width:1024px) {
     .bnr-w3pvt-txt h2 {
 		font-size: 50px;
@@ -970,6 +975,9 @@ a.move-top span{
 	}
 }
 @media(max-width:415px) {
+    #images{
+        height: 475px;
+    }
     .navbar {
 		padding: .5em 0em;
 	}
