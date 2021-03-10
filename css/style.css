@@ -1046,6 +1046,10 @@ a.move-top span{
 	}
 }
 @media(max-width:384px) {
+    .img{
+        width: 220px; 
+        height:220px;
+    }
     a.scroll.bnr-btn, a.scroll.bnr-btn1 {
 		font-size: 13px;
 	}
