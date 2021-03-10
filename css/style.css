@@ -222,9 +222,9 @@ a.scroll.bnr-btn i{
 	background: rgba(0, 0, 0, 0.5);
 	background-size: cover;
 	opacity: 0.9;
-	background: rgb(241, 127, 127);
+	background: rgba(241, 127, 127, 0.541);
 	/* background: -webkit-linear-gradient(to right, #2a5298, rgba(30, 60, 114, 0.59)); */
-    background: linear-gradient(rgb(241, 127, 127),#222222b7);
+    background: linear-gradient(rgba(241, 127, 127, 0.795),#222222b7);
 	/* background: linear-gradient(to right, #2a5298, rgba(30, 60, 114, 0.59)); */
 
 }
