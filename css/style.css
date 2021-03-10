@@ -728,6 +728,7 @@ a.move-top {
 }
 
 a.move-top span{
+    transition: ease-in-out 3s;
     color: #fff;
     width: 36px;
     height: 36px;
@@ -1172,4 +1173,11 @@ button {
 }
 .card{
     background: linear-gradient(rgb(218, 110, 110),#222222d8);
+}
+#newtxt:hover{
+    color: white;
+    cursor: pointer;
+}
+.para{
+    font-size: 10px;
 }
