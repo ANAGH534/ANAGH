@@ -3,8 +3,8 @@
 
 <head>
 	<title>ANAGH K R</title>
-<meta name="google-site-verification" content="AWxjk_Fpn8FzilJKbuxl3i1J8VFgrfVwEkoaqwKp9mo" />
-	<link rel="icon" href="images/banner.jpg" type="image/jpg" sizes="16x16">
+	<meta name="google-site-verification" content="AWxjk_Fpn8FzilJKbuxl3i1J8VFgrfVwEkoaqwKp9mo" />
+	<link rel="icon" href="images/myphoto.jpeg" type="image/jpeg" sizes="16x16">
 	<!-- for-mobile-apps -->
 	<meta name="author" content="Anagh k r">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -74,14 +74,13 @@
 		<div class="container-fluid bg">
 			<div class="row">
 				<div class="col-lg-5 p-0">
-					<img id="images" src="https://images.unsplash.com/photo-1493612276216-ee3925520721?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fGxpZ2h0JTIwcGlua3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-						class="img-fluid img" />
+					<img id="images" src="images/4886718.jpg"class="img-fluid img"/>
 				</div>
 				<div class="col-lg-6">
 					<div class="about-right">
 						<div class="row mt-sm-5 mt-4 about-right-inner">
 							<div class="col-sm-4 col-6 myphoto-sign text-center">
-								<img src="images/myphoto.jpg" class="img-fluid rounded-circle" />
+								<img src="images/myphoto.jpeg" class="img-fluid rounded-circle" />
 							</div>
 							<div class="col-sm-7 offset-lg-1">
 								<h4>Personal Info</h4>
@@ -202,21 +201,21 @@
 	<!-- //google fonts -->
 	<script>
 		$("#submit-form").submit((e) => {
-    alert("Comment Senting to Sever")
-    e.preventDefault()
-    $.ajax({
-        url: "https://script.google.com/macros/s/AKfycbxvTPuNrEwBQXPbIe0tn6PUDmJdFC0f4Xv3ZpOOM5KNQrU6vJhSIaDT/exec",
-        data: $("#submit-form").serialize(),
-        method: "post",
-        success: function (response) {
-            window.location.href = "success.html"
-        },
-        error: function (err) {
-            alert("Something Error")
+			alert("Comment Senting to Sever")
+			e.preventDefault()
+			$.ajax({
+				url: "https://script.google.com/macros/s/AKfycbxvTPuNrEwBQXPbIe0tn6PUDmJdFC0f4Xv3ZpOOM5KNQrU6vJhSIaDT/exec",
+				data: $("#submit-form").serialize(),
+				method: "post",
+				success: function (response) {
+					window.location.href = "success.html"
+				},
+				error: function (err) {
+					alert("Something Error")
 
-        }
-    })
-})
+				}
+			})
+		})
 	</script>
 </body>
 

@@ -204,7 +204,7 @@ a.scroll.bnr-btn i{
 /* banner */
 
 .banner-w3pvt {
-	background: url(../images/banner.jpg) no-repeat center;
+	background: url(../images/main.png) no-repeat center;
 	background-size: cover;
 	position: relative;
 }
@@ -222,9 +222,10 @@ a.scroll.bnr-btn i{
 	background: rgba(0, 0, 0, 0.5);
 	background-size: cover;
 	opacity: 0.9;
-	background: #1e3c72;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #2a5298, rgba(30, 60, 114, 0.59));  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #2a5298, rgba(30, 60, 114, 0.59)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: rgb(241, 127, 127);
+	/* background: -webkit-linear-gradient(to right, #2a5298, rgba(30, 60, 114, 0.59)); */
+    background: linear-gradient(rgb(241, 127, 127),#222222b7);
+	/* background: linear-gradient(to right, #2a5298, rgba(30, 60, 114, 0.59)); */
 
 }
 .bnr-w3pvt-txt h2 {
@@ -254,8 +255,9 @@ a.scroll.bnr-btn i{
     left: 0;
 	bottom: -70%
 }
-.bnr-w3pvt-txt h2 span{
-}
+/* .bnr-w3pvt-txt h2 span{
+
+} */
 .bnr-w3pvt-txt h4 {
     text-transform: capitalize;
     color: #eee;
@@ -542,7 +544,8 @@ p.sub-meta {
 .box9:hover .icon li:nth-child(2){transition-delay:.2s}
 .box9 .icon li a{display:block;width:38px;height:38px;background:#f39c12;font-size:15px;color:#fff;margin-right:5px;transition:all .35s ease 0s;-webkit-transition:all .35s ease 0s}
 .box9 .icon a:hover{background:#fff;color:#f39c12;}
-@media only screen and (max-width:990px){}
+@media only screen and (max-width:990px){
+
 }
 p.paragraph {
     color: #888;
@@ -1158,7 +1161,7 @@ button {
 }
 .img{
     width: 650px; 
-    height:700px
+    height:550px;
 }
 .contact-section{
     background: linear-gradient(rgb(241, 127, 127),#222222b7);
