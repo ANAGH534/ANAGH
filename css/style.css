@@ -90,7 +90,7 @@ ul#menu>li {
 ul#menu label {
     position: relative;
     display: block;
-    transition: background 0.3s;
+    transition: background 0.2s;
     cursor: pointer;
     text-align: center;
     margin: 0;
