@@ -222,9 +222,9 @@ a.scroll.bnr-btn i{
 	background: rgba(0, 0, 0, 0.5);
 	background-size: cover;
 	opacity: 0.9;
-	background: rgba(241, 127, 127, 0.541);
+	background: rgba(241, 127, 127, 0.705);
 	/* background: -webkit-linear-gradient(to right, #2a5298, rgba(30, 60, 114, 0.59)); */
-    background: linear-gradient(rgba(241, 127, 127, 0.795),#222222b7);
+    background: linear-gradient(rgba(241, 127, 127, 0.616),#222222b7);
 	/* background: linear-gradient(to right, #2a5298, rgba(30, 60, 114, 0.59)); */
 
 }
@@ -1126,10 +1126,10 @@ button {
     height:550px;
 }
 .contact-section{
-    background: linear-gradient(rgb(241, 127, 127),#222222b7);
+    background: linear-gradient(rgba(74, 215, 250, 0.808),#222222b7);
 }
 .card{
-    background: linear-gradient(rgb(218, 110, 110),#222222d8);
+    background: linear-gradient(rgba(101, 236, 191, 0.555),#d3f77fd8);
 }
 #newtxt:hover{
     color: white;
