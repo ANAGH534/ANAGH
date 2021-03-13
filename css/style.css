@@ -1053,6 +1053,8 @@ button {
 .img{
     width: 650px; 
     height:550px;
+    margin-top: 12rem;
+    margin-left: 3rem;
 }
 .contact-section{
     background: linear-gradient(rgba(74, 215, 250, 0.808),#222222b7);
