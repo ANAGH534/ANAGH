@@ -148,6 +148,7 @@ ul.submenu li a {
 ul.submenu li a:hover,
 ul.submenu li a.active {
     color: #2a5298;
+    text-decoration: none;
 }
 
 /* //menu */
@@ -161,6 +162,7 @@ h1.wthree-logo a {
 	font-size: 0.9em;
 	font-weight: 400;
 	color: #fff;
+	text-decoration: none;
 }
 
 h1.wthree-logo a span {
@@ -178,6 +180,7 @@ a.scroll.bnr-btn{
     letter-spacing: 1px;
     font-size: 16px;
     font-weight: 600;
+    text-decoration: none;
 }
 a.scroll.bnr-btn1 {
     background: transparent;
@@ -591,6 +594,7 @@ h3.wthree-logo a {
     font-size: 1.2em;
     font-weight: 400;
     color: #fff;
+    text-decoration: none;
 }
 h3.wthree-logo a span {
     font-weight: 800;
