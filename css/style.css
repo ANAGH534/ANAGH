@@ -1070,3 +1070,10 @@ button {
 .para{
     font-size: 10px;
 }
+.wel{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+.txtt{
+    font-family: cursive, Geneva, Tahoma, sans-serif;
+}
