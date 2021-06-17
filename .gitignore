@@ -1,1 +1,6 @@
-images/
+# ignore files
+images/*
+
+
+# but keep the folder
+!images/.gitkeep
