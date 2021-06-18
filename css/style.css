@@ -836,9 +836,6 @@ a.move-top span {
     footer {
         text-align: center;
     }
-    .w3layouts-map iframe {
-        min-height: 380px;
-    }
 }
 
 @media(max-width:800px) {
