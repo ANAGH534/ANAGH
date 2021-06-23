@@ -4,6 +4,9 @@ html, body {
     background: #fff;
     font-family: 'Source Sans Pro', sans-serif;
 }
+body{
+    overflow-x: hidden;
+}
 
 body a {
     text-decoration: none;

@@ -5,8 +5,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
-body {
+body{
     overflow-x: hidden;
 }
 
@@ -14,7 +13,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 105vh;
     padding: 20px;
     width: 100%;
     background: #001923;
@@ -34,11 +33,11 @@ body {
 .contact-main::after {
     content: '';
     position: absolute;
-    width: 350px;
-    height: 350px;
+    width: 200px;
+    height: 200px;
     background: linear-gradient(#2196f3, #83d8ff);
     border-radius: 50%;
-    transform: translate(420px, 180px);
+    transform: translate(420px, 230px);
     margin-bottom: 45px;
 }
 
@@ -174,7 +173,7 @@ body {
         transform: translate(-200px, -180px);
     }
     .contact-main::after {
-        transform: translate(200px, 180px);
+        transform: translate(80px, 320px);
     }
     .containers .row100 .col .inputBox .text {
         font-size: 15px;
