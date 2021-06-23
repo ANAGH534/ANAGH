@@ -157,7 +157,7 @@ body {
     height: 100%;
 }
 
-.containers .row100 .col input[type="submit"] {
+.containers .row100 .col input[type="button"] {
     border: none;
     padding: 10px 40px;
     cursor: pointer;

@@ -15,6 +15,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" href="css/more.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -145,53 +146,55 @@
 	<!--contact us-->
 	<div class="contact-main" id="contact">
 		<div class="containers">
-			<h2>Contact us</h2>
-			<div class="row100">
-				<div class="col">
-					<div class="inputBox">
-						<input type="text" name="" required="required">
-						<span class="text">First Name</span>
-						<span class="line"></span>
+			<form id="submit-form" action="">
+				<h2>Contact us</h2>
+				<div class="row100">
+					<div class="col">
+						<div class="inputBox">
+							<input type="text" name="fname" required="required">
+							<span class="text">First Name</span>
+							<span class="line"></span>
+						</div>
+					</div>
+					<div class="col">
+						<div class="inputBox">
+							<input type="text" name="lname" required="required">
+							<span class="text">Last Name</span>
+							<span class="line"></span>
+						</div>
 					</div>
 				</div>
-				<div class="col">
-					<div class="inputBox">
-						<input type="text" name="" required="required">
-						<span class="text">Last Name</span>
-						<span class="line"></span>
+				<div class="row100">
+					<div class="col">
+						<div class="inputBox">
+							<input type="email" name="email" required="required">
+							<span class="text">Email</span>
+							<span class="line"></span>
+						</div>
+					</div>
+					<div class="col">
+						<div class="inputBox">
+							<input type="tel" name="mobile" required="required">
+							<span class="text">Mobile</span>
+							<span class="line"></span>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="row100">
-				<div class="col">
-					<div class="inputBox">
-						<input type="text" name="" required="required">
-						<span class="text">Email</span>
-						<span class="line"></span>
+				<div class="row100">
+					<div class="col">
+						<div class="inputBox textarea">
+							<textarea name="message" required="required"></textarea>
+							<span class="text">Type Your Message Here...</span>
+							<span class="line"></span>
+						</div>
 					</div>
 				</div>
-				<div class="col">
-					<div class="inputBox">
-						<input type="text" name="" required="required">
-						<span class="text">Mobile</span>
-						<span class="line"></span>
+				<div class="row100">
+					<div class="col">
+						<input type="button" value="Send">
 					</div>
 				</div>
-			</div>
-			<div class="row100">
-				<div class="col">
-					<div class="inputBox textarea">
-						<textarea required="required"></textarea>
-						<span class="text">Type Your Message Here...</span>
-						<span class="line"></span>
-					</div>
-				</div>
-			</div>
-			<div class="row100">
-				<div class="col">
-					<input type="submit" value="Send">
-				</div>
-			</div>
+			</form>
 		</div>
 	</div>
 	</section>
@@ -259,10 +262,27 @@
 		href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
 		rel="stylesheet">
 	<!-- //google fonts -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<link rel="icon" href="images/myphoto.jpeg" type="image/jpeg" sizes="16x16">
-
+	<script>
+		//html Form submit
+		$("#submit-form").submit((e) => {
+			e.preventDefault()
+			$.ajax({
+				url: "https://script.google.com/macros/s/AKfycbw0LjQ35zHfVjuVBWMzXwRGM8gsvr3VxsRl_BbLAEqGwPD_GkXj88ZQ8PV3VZcDWHjl/exec",
+				data: $("#submit-form").serialize(),
+				method: "post",
+				success: function (response) {
+					alert("Form submitted successfully")
+					window.location.reload()
+					//window.location.href="https://google.com"
+				},
+				error: function (err) {
+					alert("Something Error")
+				}
+			})
+		})
+	</script>
 </body>
 
 </html>
