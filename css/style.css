@@ -312,7 +312,7 @@ h3.position {
 }
 
 .about-right h4.main {
-    font-size: 24px;
+    font-size: 23px;
     text-transform: capitalize;
     font-weight: 600;
     margin: 1em 0;
@@ -323,7 +323,7 @@ h3.position {
 }
 
 .about-right p {
-    font-size: 16px;
+    font-size: 14px;
     color: #777;
 }
 
