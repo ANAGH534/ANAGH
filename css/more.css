@@ -5,9 +5,11 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body{
+
+body {
     overflow-x: hidden;
 }
+
 .contact-main {
     display: flex;
     justify-content: center;
@@ -150,10 +152,12 @@ body{
 .containers .row100 .col .inputBox input:focus~.line, .containers .row100 .col .inputBox input:valid~.line {
     height: 100%;
 }
+
 .containers .row100 .col .inputBox textarea:focus~.line, .containers .row100 .col .inputBox textarea:valid~.line {
     height: 100%;
 }
-.containers .row100 .col  input[type="submit"]{
+
+.containers .row100 .col input[type="submit"] {
     border: none;
     padding: 10px 40px;
     cursor: pointer;
@@ -164,11 +168,14 @@ body{
     font-size: 18px;
     border-radius: 2px;
 }
-@media (max-width:768px){
-    .contact-main::before{
-        transform: translate(-200px,-180px);
+
+@media (max-width:768px) {
+    .contact-main::before {
+        transform: translate(-200px, -180px);
     }
-    .contact-main::after{
-        transform: translate(200px,180px);
+    .contact-main::after {
+        transform: translate(200px, 180px);
     }
-}
+    .containers .row100 .col .inputBox .text {
+        font-size: 15px;
+    }
