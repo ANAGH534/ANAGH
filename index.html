@@ -146,8 +146,8 @@
 	<!--contact us-->
 	<div class="contact-main" id="contact">
 		<div class="containers">
-			<form id="submit-form" action="">
-				<h2>Contact us</h2>
+			<h2>Contact us</h2>
+			<form action="" id="submit-form">
 				<div class="row100">
 					<div class="col">
 						<div class="inputBox">
@@ -191,7 +191,7 @@
 				</div>
 				<div class="row100">
 					<div class="col">
-						<input type="button" value="Send">
+						<input onclick="submitForm()" type="button" value="Send">
 					</div>
 				</div>
 			</form>
@@ -266,8 +266,24 @@
 	<link rel="icon" href="images/myphoto.jpeg" type="image/jpeg" sizes="16x16">
 	<script>
 		//html Form submit
-		$("#submit-form").submit((e) => {
-			e.preventDefault()
+		// $("#submit-form").submit((e) => {
+		// 	e.preventDefault()
+		// 	$.ajax({
+		// 		url: "https://script.google.com/macros/s/AKfycbw0LjQ35zHfVjuVBWMzXwRGM8gsvr3VxsRl_BbLAEqGwPD_GkXj88ZQ8PV3VZcDWHjl/exec",
+		// 		data: $("#submit-form").serialize(),
+		// 		method: "post",
+		// 		success: function (response) {
+		// 			alert("Form submitted successfully")
+		// 			window.location.reload()
+		// 			//window.location.href="https://google.com"
+		// 		},
+		// 		error: function (err) {
+		// 			alert("Something Error")
+		// 		}
+		// 	})
+		// })
+		function submitForm() {
+			// e.preventDefault()
 			$.ajax({
 				url: "https://script.google.com/macros/s/AKfycbw0LjQ35zHfVjuVBWMzXwRGM8gsvr3VxsRl_BbLAEqGwPD_GkXj88ZQ8PV3VZcDWHjl/exec",
 				data: $("#submit-form").serialize(),
@@ -281,7 +297,7 @@
 					alert("Something Error")
 				}
 			})
-		})
+		}
 	</script>
 </body>
 
