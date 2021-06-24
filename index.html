@@ -266,37 +266,28 @@
 	<link rel="icon" href="images/myphoto.jpeg" type="image/jpeg" sizes="16x16">
 	<script>
 		//html Form submit
-		// $("#submit-form").submit((e) => {
-		// 	e.preventDefault()
-		// 	$.ajax({
-		// 		url: "https://script.google.com/macros/s/AKfycbw0LjQ35zHfVjuVBWMzXwRGM8gsvr3VxsRl_BbLAEqGwPD_GkXj88ZQ8PV3VZcDWHjl/exec",
-		// 		data: $("#submit-form").serialize(),
-		// 		method: "post",
-		// 		success: function (response) {
-		// 			alert("Form submitted successfully")
-		// 			window.location.reload()
-		// 			//window.location.href="https://google.com"
-		// 		},
-		// 		error: function (err) {
-		// 			alert("Something Error")
-		// 		}
-		// 	})
-		// })
+		var form = false;
 		function submitForm() {
 			// e.preventDefault()
-			$.ajax({
-				url: "https://script.google.com/macros/s/AKfycbw0LjQ35zHfVjuVBWMzXwRGM8gsvr3VxsRl_BbLAEqGwPD_GkXj88ZQ8PV3VZcDWHjl/exec",
-				data: $("#submit-form").serialize(),
-				method: "post",
-				success: function (response) {
-					alert("Form submitted successfully")
-					window.location.reload()
-					//window.location.href="https://google.com"
-				},
-				error: function (err) {
-					alert("Something Error")
-				}
-			})
+			if (form) {
+				console.log("Form submitted successfully");
+				alert("Form submitted successfully");
+			} else {
+				$.ajax({
+					url: "https://script.google.com/macros/s/AKfycbw0LjQ35zHfVjuVBWMzXwRGM8gsvr3VxsRl_BbLAEqGwPD_GkXj88ZQ8PV3VZcDWHjl/exec",
+					data: $("#submit-form").serialize(),
+					method: "post",
+					success: function (response) {
+						alert("Form submitted successfully")
+						form = true;
+						// window.location.reload()
+						//window.location.href="https://google.com"
+					},
+					error: function (err) {
+						alert("Something Error")
+					}
+				})
+			}
 		}
 	</script>
 </body>
